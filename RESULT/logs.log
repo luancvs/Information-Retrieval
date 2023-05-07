@@ -1,20 +1,37 @@
+INFO: Reading config file gli.cfg
+INFO: Reading config file busca.cfg
+INFO: Reading config file index.cfg
+INFO: Reading config file pc.cfg
+INFO: Module 1: Query processor started
+INFO: Reading file CysticFibrosis2-20230331/data/cfquery.xml
+INFO: 99 queries read and written to RESULT/CONSULTAS.csv.
+INFO: Writing expected results.
+INFO: 4812 expected results written to 'RESULT/ESPERADOS.csv'.
+INFO: Module 1: Query processor finished
+INFO: Module 2: Inverted List Generator started
+INFO: Reading file CysticFibrosis2-20230331/data/cf74.xml
 WARNING: Document 36 in CysticFibrosis2-20230331/data/cf74.xml without ABSTRACT and EXTRACT.
 WARNING: Document 128 in CysticFibrosis2-20230331/data/cf74.xml without ABSTRACT and EXTRACT.
 WARNING: Document 132 in CysticFibrosis2-20230331/data/cf74.xml without ABSTRACT and EXTRACT.
+INFO: Reading file CysticFibrosis2-20230331/data/cf75.xml
 WARNING: Document 168 in CysticFibrosis2-20230331/data/cf75.xml without ABSTRACT and EXTRACT.
 WARNING: Document 298 in CysticFibrosis2-20230331/data/cf75.xml without ABSTRACT and EXTRACT.
 WARNING: Document 329 in CysticFibrosis2-20230331/data/cf75.xml without ABSTRACT and EXTRACT.
+INFO: Reading file CysticFibrosis2-20230331/data/cf76.xml
 WARNING: Document 493 in CysticFibrosis2-20230331/data/cf76.xml without ABSTRACT and EXTRACT.
 WARNING: Document 512 in CysticFibrosis2-20230331/data/cf76.xml without ABSTRACT and EXTRACT.
 WARNING: Document 551 in CysticFibrosis2-20230331/data/cf76.xml without ABSTRACT and EXTRACT.
+INFO: Reading file CysticFibrosis2-20230331/data/cf77.xml
 WARNING: Document 595 in CysticFibrosis2-20230331/data/cf77.xml without ABSTRACT and EXTRACT.
 WARNING: Document 712 in CysticFibrosis2-20230331/data/cf77.xml without ABSTRACT and EXTRACT.
 WARNING: Document 729 in CysticFibrosis2-20230331/data/cf77.xml without ABSTRACT and EXTRACT.
 WARNING: Document 735 in CysticFibrosis2-20230331/data/cf77.xml without ABSTRACT and EXTRACT.
+INFO: Reading file CysticFibrosis2-20230331/data/cf78.xml
 WARNING: Document 839 in CysticFibrosis2-20230331/data/cf78.xml without ABSTRACT and EXTRACT.
 WARNING: Document 894 in CysticFibrosis2-20230331/data/cf78.xml without ABSTRACT and EXTRACT.
 WARNING: Document 932 in CysticFibrosis2-20230331/data/cf78.xml without ABSTRACT and EXTRACT.
 WARNING: Document 939 in CysticFibrosis2-20230331/data/cf78.xml without ABSTRACT and EXTRACT.
+INFO: Reading file CysticFibrosis2-20230331/data/cf79.xml
 WARNING: Document 1023 in CysticFibrosis2-20230331/data/cf79.xml without ABSTRACT and EXTRACT.
 WARNING: Document 1069 in CysticFibrosis2-20230331/data/cf79.xml without ABSTRACT and EXTRACT.
 WARNING: Document 1089 in CysticFibrosis2-20230331/data/cf79.xml without ABSTRACT and EXTRACT.
@@ -22,3 +39,17 @@ WARNING: Document 1150 in CysticFibrosis2-20230331/data/cf79.xml without ABSTRAC
 WARNING: Document 1154 in CysticFibrosis2-20230331/data/cf79.xml without ABSTRACT and EXTRACT.
 WARNING: Document 1187 in CysticFibrosis2-20230331/data/cf79.xml without ABSTRACT and EXTRACT.
 WARNING: Document 1225 in CysticFibrosis2-20230331/data/cf79.xml without ABSTRACT and EXTRACT.
+INFO: Inverted list generated with 9408 terms considered.
+INFO: 9408 terms written. Saved inverted list to 'RESULT/LISTA INVERSA.csv'
+INFO: Module 2: Generate Inverted List finished
+INFO: Module 3: Index started
+INFO: Loading word and documents data from RESULT/LISTA INVERSA.csv
+INFO: tfidf matrix created.
+INFO: tfidf matrix and vectorizer saved to RESULT/ModeloTFIDF.pkl.
+INFO: Module 3: Index finished.
+INFO: Module 4: Searcher started
+INFO: tfidf model loaded from RESULT/ModeloTFIDF.pkl
+INFO: Queries loaded from RESULT/CONSULTAS.csv
+INFO: Results saved to RESULT/RESULTADOS.csv
+INFO: Module 4: Searcher finished
+INFO: Execution completed
