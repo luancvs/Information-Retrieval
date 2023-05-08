@@ -1,9 +1,9 @@
 # Information-Retrieval
 PESC - COPPE/ UFRJ
 
-- [Model Description](Modelo%20Vetorial.doc)
+- [X] [Model Description](Modelo%20Vetorial.doc)
 
-- [Code](src/Information%20Retrieval.ipynb)
+- [X] [Code](src/Information%20Retrieval.ipynb)
 
 - [X] Data prep - Read and check [config files](config_files/), set [log](RESULT/logs.log) and paths.
 
